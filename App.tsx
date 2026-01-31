@@ -622,11 +622,30 @@ const Footer = ({ onSymbolClick }: { onSymbolClick: () => void }) => (
     <div className="max-w-7xl mx-auto flex flex-col items-center gap-10">
       <div className="flex gap-4">
         {[
-          // { icon: 'linkedin-in', link: '#' },
-          // { icon: 'github', link: '#' },
-    // { icon: 'whatsapp', link: '#' },
-          // { icon: 'instagram', link: '#' },
-    {
+  //         // { icon: 'linkedin-in', link: '#' },
+  //         // { icon: 'github', link: '#' },
+  //   // { icon: 'whatsapp', link: '#' },
+  //         // { icon: 'instagram', link: '#' },
+  //   {
+  //   icon: 'linkedin-in',
+  //   link: 'https://www.linkedin.com/in/arun-kashyap-22188a325/'
+  // },
+  // {
+  //   icon: 'github',
+  //   link: 'https://github.com/ak-developer78'
+  // },
+  // {
+  //   icon: 'instagram',
+  //   link: '#' // you said leave insta
+  // },
+  // {
+  //   icon: 'whatsapp',
+  //   link: 'https://wa.me/918810621749?text=Hello%20Arun'
+  // }
+  //         { icon: 'envelope', link: 'mailto:arunkashyap7834@gmail.com' }
+
+    const socialLinks = [
+  {
     icon: 'linkedin-in',
     link: 'https://www.linkedin.com/in/arun-kashyap-22188a325/'
   },
@@ -642,8 +661,10 @@ const Footer = ({ onSymbolClick }: { onSymbolClick: () => void }) => (
     icon: 'whatsapp',
     link: 'https://wa.me/918810621749?text=Hello%20Arun'
   }
-          
-          { icon: 'envelope', link: 'mailto:arunkashyap7834@gmail.com' }
+];
+
+
+    
         ].map((s, idx) => (
           <a key={idx} href={s.link} className="w-12 h-12 rounded-full glass border border-white/10 flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:border-cyan-500/50 transition-all hover:scale-110">
             <i className={`fab fa-${s.icon} ${s.icon === 'envelope' ? 'fas' : ''} text-lg`}></i>
